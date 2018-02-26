@@ -33,6 +33,8 @@ public class NominativoAction extends org.apache.struts.actions.MappingDispatchA
         nuovo.setCognome(request.getParameter("cognome"));
         nuovo.setCellulare(request.getParameter("numero"));
         
+        mapping.setProperty("nome", "ciao");
+        
         return mapping.findForward("ok");
     }
 }
